@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="teamsevendream.paspaintracker.app">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="teamsevendream.paspaintracker.main.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data
+                    android:host="pas-pain-tracker"
+                    android:pathPattern="/.*"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:name="teamsevendream.paspaintracker.main.MainActivity" />
+        <activity android:name="teamsevendream.paspaintracker.main.PersonalEntry" />
+        <activity android:name="teamsevendream.paspaintracker.main.PersonalView" />
+        <activity android:name="teamsevendream.paspaintracker.main.SpiderInput" />
+        <activity android:name="teamsevendream.paspaintracker.main.SpiderOutput" />
+        <activity android:name="teamsevendream.paspaintracker.main.RecordPain" />
+        <activity android:name="teamsevendream.paspaintracker.main.CalendarPage" />
+        <activity android:name="teamsevendream.paspaintracker.main.ViewPain" />
+        <activity android:name="teamsevendream.paspaintracker.main.Search" />
+        <activity android:name="teamsevendream.paspaintracker.main.MapPage"/>
+        <activity android:name="teamsevendream.paspaintracker.main.VideoPage"></activity>
+
+
+    </application>
+
+</manifest>

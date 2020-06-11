@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SpiderOutput">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/viewRoot">
+                    <com.otaliastudios.zoom.ZoomLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="vertical|horizontal"
+                        app:transformation="centerInside"
+                        app:transformationGravity="auto"
+                        app:alignment="center"
+                        app:overScrollHorizontal="true"
+                        app:overScrollVertical="true"
+                        app:overPinchable="true"
+                        app:horizontalPanEnabled="true"
+                        app:verticalPanEnabled="true"
+                        app:zoomEnabled="true"
+                        app:flingEnabled="true"
+                        app:minZoom="0.7"
+                        app:minZoomType="zoom"
+                        app:maxZoom="2.5"
+                        app:maxZoomType="zoom"
+                        app:animationDuration="280"
+                        app:hasClickableChildren="false">
+
+                        <com.numetriclabz.numandroidcharts.RadarChart
+                            android:layout_width="300dp"
+                            android:layout_height="300dp"
+                            android:layout_centerInParent="true"
+                            android:id="@+id/radar_chart">
+                        </com.numetriclabz.numandroidcharts.RadarChart>
+
+                    </com.otaliastudios.zoom.ZoomLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:spinnerMode="dropdown">
+                </Spinner>
+
+                <Button
+                    android:id="@+id/ToVideoPage"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/btn_rounded"
+                    android:text="PLAY VIDEO"
+                    android:onClick="doThis"
+                    android:textColor="@color/buttonText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="6dp"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/videoDescription"
+                android:text="@string/video_description"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

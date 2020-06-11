@@ -1,0 +1,231 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RecordPain">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="PAS PAIN INPUT"
+                android:textColor="#ffff"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/bodyText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="1: AFFECTED BODY AREA"
+                android:gravity="center"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/bodySearch"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/input_rounded"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:hint="SEARCH" />
+
+            <TextView
+                android:id="@+id/intensityText"
+                android:layout_width="match_parent"
+                android:text="2: INTENSITY OF PAIN"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp" />
+
+                <SeekBar
+                    android:id="@+id/intensitySeekBar"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/input_rounded"
+                    android:visibility="visible"
+                    android:max="10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/contextText"
+                android:layout_width="match_parent"
+                android:text="3: CONTEXT"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/contextInput"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/input_rounded"
+                android:inputType="text"
+                android:hint="CONTEXT" />
+
+            <TextView
+                android:id="@+id/dateText"
+                android:layout_width="match_parent"
+                android:text="4: DATE"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/dateEdit"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:background="@drawable/input_rounded"
+                android:hint="DATE" />
+
+            <TextView
+                android:id="@+id/timeText"
+                android:layout_width="match_parent"
+                android:text="5: TIME"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/timeEdit"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:ems="10"
+                android:background="@drawable/input_rounded"
+                android:focusableInTouchMode="false"
+                android:hint="TIME" />
+
+            <TextView
+                android:id="@+id/helpedText"
+                android:layout_width="match_parent"
+                android:text="6: WHAT HELPED?"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/helpedInput"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/input_rounded"
+                android:inputType="text"
+                android:hint="HELPED" />
+
+            <TextView
+                android:id="@+id/notHelpedText"
+                android:layout_width="match_parent"
+                android:text="7: WHAT DIDN'T HELP?"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/notHelpedInput"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/input_rounded"
+                android:inputType="text"
+                android:hint="DIDN'T HELP" />
+
+            <TextView
+                android:id="@+id/painWorseText"
+                android:layout_width="match_parent"
+                android:text="8: WHAT MADE THE PAIN WORSE?"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/painWorseInput"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/input_rounded"
+                android:inputType="text"
+                android:hint="WORSE" />
+
+            <Button
+                android:id="@+id/btnSubmitPainData"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/btn_rounded"
+                android:text="SUBMIT"
+                android:textColor="@color/buttonText" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
