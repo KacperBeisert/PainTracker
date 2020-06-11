@@ -1,4 +1,4 @@
-# PainTracker
+# Level3TeamProject - PainTracker
 
 PainTracker is a mobile (Android) application developed in collaboration with Pain Association Scotland.
 The goal of the app is to provide people suffering from chronic pain with a portable and easy to use tool to help monitor and record their pain attacks
