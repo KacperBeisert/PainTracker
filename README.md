@@ -21,7 +21,7 @@ Documentation describing the general design of the app is available on the proje
 ## Coding style
 
 Coding style guidelines are available on the project wiki: 
-1) [Coding Style Guidelines](https://github.com/KacperBeisert/PainTracker/wiki/Coding-Guidelines)
+1) [Coding Guidelines](https://github.com/KacperBeisert/PainTracker/wiki/Coding-Guidelines)
  
 ## Platform and IDE
 
