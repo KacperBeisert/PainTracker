@@ -31,11 +31,7 @@ Minimal accepted API level is 19 (KitKat 4.4).
 
 ## Testing
 
-The app comes with a set of instrumented and unit tests to help developers check and maintain the validity of app's inputs, outputs and methods.  
-These tests can be accessed and executed with Android Studio IDE.  
-The app also includes code style tests to ensure the proper structure and quality of code.  
-A link to the guide to executing code style tests is available in the 'Coding style' section of this document.  
-The tests have been performed regularily as part of the project's CI pipeline.
+The app comes with a set of instrumented and unit tests to help developers check and maintain the validity of app's inputs, outputs and methods. These tests can be accessed and executed with Android Studio IDE. The app also includes code style tests to ensure the proper structure and quality of code. A link to the guide to executing code style tests is available in the 'Coding style' section of this document. The tests have been performed regularily as part of the project's CI pipeline.
 
 ## Credits
 
